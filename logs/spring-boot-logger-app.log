@@ -1,0 +1,3 @@
+2021-11-22 18:02:32,508 INFO org.springframework.boot.StartupInfoLogger [main] Starting TaskbookServiceApplicationTests using Java 1.8.0_282 on THINKLENS with PID 12716 (started by thirdeyelens in C:\Users\thirdeyelens\CCE-PRG7941-Fall2021-Agile\FINAL-PROJECT\taskbook-service)
+2021-11-22 18:02:32,510 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.5.7, Spring v5.3.13
+2021-11-22 18:02:32,510 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: local
