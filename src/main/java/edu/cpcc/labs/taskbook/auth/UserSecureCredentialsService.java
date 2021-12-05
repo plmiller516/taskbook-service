@@ -37,7 +37,7 @@ public class UserSecureCredentialsService implements UserDetailsService {
 		if (user == null) {
 			throw new UsernameNotFoundException(username);
 		}
-		return new org.springframework.security.core.userdetails.User(user.getUserId(), 
+		return new org.springframework.security.core.userdetails.User(user.getUsername(), 
 				                                                      user.getPassword(), 
 				                                                      getAuthorities());
 	}
@@ -57,7 +57,7 @@ public class UserSecureCredentialsService implements UserDetailsService {
 		newUser.setPassword(passwordEncoder.encode(newUser.getPassword()));
 		User savedUser = userRepository.save(newUser);
 		// NOTE: the spring security User class implements a UserDetails interface...
-		return new org.springframework.security.core.userdetails.User(savedUser.getUserId(), 
+		return new org.springframework.security.core.userdetails.User(savedUser.getUsername(), 
 				                                                      savedUser.getPassword(), 
 				                                                      getAuthorities());
 	}

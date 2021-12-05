@@ -39,7 +39,7 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
 		  try {
 		      edu.cpcc.labs.taskbook.model.User creds = new ObjectMapper().readValue(req.getInputStream(),  edu.cpcc.labs.taskbook.model.User.class);
 		      
-		      Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(creds.getUserId(),
+		      Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(creds.getUsername(),
                                                                                          creds.getPassword(),
                                                                                          new ArrayList<>()));	
 		      	
