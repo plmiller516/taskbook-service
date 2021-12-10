@@ -1,10 +1,12 @@
 package edu.cpcc.labs.taskbook.controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -31,8 +33,7 @@ public class TaskController {
 		
 	TaskService taskService; 
 		
-	Logger logger = LoggerFactory.getLogger(TaskController.class.getName());
-	
+	Logger logger = LoggerFactory.getLogger(TaskController.class.getName());	
 	
 	@Autowired
 	public TaskController(TaskService taskService) {
@@ -58,7 +59,7 @@ public class TaskController {
 	// URI: /api/taskbook/tasks/<id-value>
 	// URL: http://localhost:8080/api/taskbook/tasks/<id-value>
 	@GetMapping("/{id}")
-	public Task get(@PathVariable @NotNull Integer id) {
+	public Optional<Task> get(@PathVariable @NotNull Integer id) {
 		return this.taskService.get(id);
 	}
 	
@@ -74,15 +75,25 @@ public class TaskController {
 	// URI: /api/taskbook/tasks
 	// URL: http://localhost:8080/api/taskbook/tasks	
 	@PutMapping()
-	public Task update(@RequestBody @Valid Task task) {
-		return this.taskService.update(task);		
+	public ResponseEntity<Task> update(@RequestBody @Valid Task task) {
+		Task updatedTask =  this.taskService.update(task);		
+		if (updatedTask == null) {
+			String responseText = "Task NOT found with that id: [" + task.getId() + "]";
+			return ResponseEntity.notFound().header("Task", responseText).build();
+		}
+		return ResponseEntity.ok(updatedTask);
 	}
 	
 	// URI: /api/taskbook/tasks?status=<value>
 	// URL: http://localhost:8080/api/taskbook/tasks?status=<value>
-	@DeleteMapping()
-	public void delete(@PathVariable @NotNull Integer id) {
-		this.taskService.delete(id);;		
+	@DeleteMapping("/{id}")
+	public ResponseEntity<Task> delete(@PathVariable @NotNull Integer id) {
+		Task foundTask = this.taskService.delete(id);
+		if (foundTask == null) {
+			String responseText = "Task NOT found with that id: [" + id + "]";
+			return ResponseEntity.notFound().header("Task", responseText).build();
+		}
+		return ResponseEntity.ok().build();		
 	}
 	
 

@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotEmpty;
 
 @Entity
 @Table(name="task")
@@ -17,9 +18,11 @@ public class Task {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
+	@NotEmpty (message="Task Name cannot be null or empty.")
 	@Column(nullable = false)
 	private String name;
 	
+	@NotEmpty (message="Task Description cannot be null or empty.")
 	@Column(nullable = false)
 	private String description;
 	
@@ -30,9 +33,12 @@ public class Task {
 	@Column(nullable = false)
 	private TaskStatus status;
 	
+	@NotEmpty (message="Created By cannot be null.")
 	@Column(nullable = false)
 	private String createdBy;
 	
+	public Task() {		
+	}	
 	
 	public Integer getId() {
 		return id;
@@ -70,8 +76,7 @@ public class Task {
 	}
 	
 	
-	public static void main(String args[]) {
-		
+	public static void main(String args[]) {		
 		Task task = new Task();
 		task.setStatus(TaskStatus.OPEN);
 	}
