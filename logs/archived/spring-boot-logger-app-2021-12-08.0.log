@@ -1,0 +1,34 @@
+2021-12-08 22:41:57,925 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TaskbookServiceApplication using Java 1.8.0_282 on THINKLENS with PID 3340 (C:\Users\thirdeyelens\CCE-PRG7941-Fall2021-Agile\FINAL-PROJECT\taskbook-service\target\classes started by thirdeyelens in C:\Users\thirdeyelens\CCE-PRG7941-Fall2021-Agile\FINAL-PROJECT\taskbook-service)
+2021-12-08 22:41:57,936 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.7, Spring v5.3.13
+2021-12-08 22:41:57,936 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: local
+2021-12-08 22:42:02,738 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TaskbookServiceApplication in 5.378 seconds (JVM running for 6.26)
+2021-12-08 22:48:07,788 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TaskbookServiceApplication using Java 1.8.0_282 on THINKLENS with PID 3340 (C:\Users\thirdeyelens\CCE-PRG7941-Fall2021-Agile\FINAL-PROJECT\taskbook-service\target\classes started by thirdeyelens in C:\Users\thirdeyelens\CCE-PRG7941-Fall2021-Agile\FINAL-PROJECT\taskbook-service)
+2021-12-08 22:48:07,789 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.7, Spring v5.3.13
+2021-12-08 22:48:07,789 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: local
+2021-12-08 22:48:08,630 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TaskbookServiceApplication in 0.892 seconds (JVM running for 372.151)
+2021-12-08 22:54:52,746 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TaskbookServiceApplication using Java 1.8.0_282 on THINKLENS with PID 3340 (C:\Users\thirdeyelens\CCE-PRG7941-Fall2021-Agile\FINAL-PROJECT\taskbook-service\target\classes started by thirdeyelens in C:\Users\thirdeyelens\CCE-PRG7941-Fall2021-Agile\FINAL-PROJECT\taskbook-service)
+2021-12-08 22:54:52,747 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.7, Spring v5.3.13
+2021-12-08 22:54:52,747 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: local
+2021-12-08 22:54:53,497 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TaskbookServiceApplication in 0.8 seconds (JVM running for 777.018)
+2021-12-08 23:02:14,089 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TaskbookServiceApplication using Java 1.8.0_282 on THINKLENS with PID 3340 (C:\Users\thirdeyelens\CCE-PRG7941-Fall2021-Agile\FINAL-PROJECT\taskbook-service\target\classes started by thirdeyelens in C:\Users\thirdeyelens\CCE-PRG7941-Fall2021-Agile\FINAL-PROJECT\taskbook-service)
+2021-12-08 23:02:14,089 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.7, Spring v5.3.13
+2021-12-08 23:02:14,089 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: local
+2021-12-08 23:02:14,849 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TaskbookServiceApplication in 0.807 seconds (JVM running for 1218.37)
+2021-12-08 23:02:21,678 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TaskbookServiceApplication using Java 1.8.0_282 on THINKLENS with PID 3340 (C:\Users\thirdeyelens\CCE-PRG7941-Fall2021-Agile\FINAL-PROJECT\taskbook-service\target\classes started by thirdeyelens in C:\Users\thirdeyelens\CCE-PRG7941-Fall2021-Agile\FINAL-PROJECT\taskbook-service)
+2021-12-08 23:02:21,679 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.7, Spring v5.3.13
+2021-12-08 23:02:21,679 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: local
+2021-12-08 23:02:22,358 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TaskbookServiceApplication in 0.726 seconds (JVM running for 1225.88)
+2021-12-08 23:06:10,178 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TaskbookServiceApplication using Java 1.8.0_282 on THINKLENS with PID 3340 (C:\Users\thirdeyelens\CCE-PRG7941-Fall2021-Agile\FINAL-PROJECT\taskbook-service\target\classes started by thirdeyelens in C:\Users\thirdeyelens\CCE-PRG7941-Fall2021-Agile\FINAL-PROJECT\taskbook-service)
+2021-12-08 23:06:10,178 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.7, Spring v5.3.13
+2021-12-08 23:06:10,179 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: local
+2021-12-08 23:06:10,914 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TaskbookServiceApplication in 0.785 seconds (JVM running for 1454.436)
+2021-12-08 23:06:21,772 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TaskbookServiceApplication using Java 1.8.0_282 on THINKLENS with PID 3340 (C:\Users\thirdeyelens\CCE-PRG7941-Fall2021-Agile\FINAL-PROJECT\taskbook-service\target\classes started by thirdeyelens in C:\Users\thirdeyelens\CCE-PRG7941-Fall2021-Agile\FINAL-PROJECT\taskbook-service)
+2021-12-08 23:06:21,772 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.7, Spring v5.3.13
+2021-12-08 23:06:21,772 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: local
+2021-12-08 23:07:14,747 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TaskbookServiceApplication using Java 1.8.0_282 on THINKLENS with PID 3340 (C:\Users\thirdeyelens\CCE-PRG7941-Fall2021-Agile\FINAL-PROJECT\taskbook-service\target\classes started by thirdeyelens in C:\Users\thirdeyelens\CCE-PRG7941-Fall2021-Agile\FINAL-PROJECT\taskbook-service)
+2021-12-08 23:07:14,747 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.7, Spring v5.3.13
+2021-12-08 23:07:14,747 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: local
+2021-12-08 23:17:34,146 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TaskbookServiceApplication using Java 1.8.0_282 on THINKLENS with PID 8368 (C:\Users\thirdeyelens\CCE-PRG7941-Fall2021-Agile\FINAL-PROJECT\taskbook-service\target\classes started by thirdeyelens in C:\Users\thirdeyelens\CCE-PRG7941-Fall2021-Agile\FINAL-PROJECT\taskbook-service)
+2021-12-08 23:17:34,146 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.7, Spring v5.3.13
+2021-12-08 23:17:34,147 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: local
+2021-12-08 23:17:38,287 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TaskbookServiceApplication in 4.594 seconds (JVM running for 5.424)
