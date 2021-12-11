@@ -44,33 +44,33 @@ public class ApiCustomExceptionHandler extends ResponseEntityExceptionHandler  {
 				                          HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 	
-	 // NOTE: https://www.baeldung.com/spring-boot-bean-validation
-	 // NOTE: https://stackoverflow.com/questions/38282298/ambiguous-exceptionhandler-method-mapped-for-class-org-springframework-web-bin
-	 // explains how to handle field validation exceptions...
-	 @Override
-	 protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex,
-	                                                               HttpHeaders headers, 
-	                                                               HttpStatus status,
-	                                                               WebRequest request) {
-		 
-		 // Java -8 Stream API with a lambda sprinkle snippet...
-		 List<String> fieldValidationErrors = ex.getBindingResult()
-	                                            .getFieldErrors()
-	                                            .stream()
-	                                            .map(fieldError -> fieldError.getDefaultMessage())
-	                                            .collect(Collectors.toList());
-		 ApiFieldValidationError apiFieldValidationError = new ApiFieldValidationError(HttpStatus.BAD_REQUEST, 
-                										                               "Whoops !!! API failed input validation.",
-                                                                                       ex,
-                                                                                       fieldValidationErrors);
-		 // log the error for troubleshooting ..
-		 logger.error(apiFieldValidationError.getFieldValidationErrrors().toString());
-		 logger.error(apiFieldValidationError.getDebugMessage());
-		 
-		 return new ResponseEntity<Object>(apiFieldValidationError, 
-		   	                               new HttpHeaders(), 
-			                               apiFieldValidationError.getStatus());
-	  }
+	// NOTE: https://www.baeldung.com/spring-boot-bean-validation
+	// NOTE: https://stackoverflow.com/questions/38282298/ambiguous-exceptionhandler-method-mapped-for-class-org-springframework-web-bin
+	// Explains how to handle field validation exceptions...
+	@Override
+	protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex,
+															      HttpHeaders headers, 
+																  HttpStatus status,
+																  WebRequest request) {
+
+		// Java -8 Stream API with a lambda sprinkle snippet...
+		List<String> fieldValidationErrors = ex.getBindingResult()
+												.getFieldErrors()
+												.stream()
+												.map(fieldError -> fieldError.getDefaultMessage())
+												.collect(Collectors.toList());
+		ApiFieldValidationError apiFieldValidationError = new ApiFieldValidationError(HttpStatus.BAD_REQUEST, 
+																					  "Whoops !!! API failed input validation.",
+																				       ex,
+																					   fieldValidationErrors);
+		// log the error for troubleshooting ..
+		logger.error(apiFieldValidationError.getFieldValidationErrrors().toString());
+		logger.error(apiFieldValidationError.getDebugMessage());
+
+		return new ResponseEntity<Object>(apiFieldValidationError, 
+				                          new HttpHeaders(), 
+				                          apiFieldValidationError.getStatus());
+	}
 	
 	
 	// NOTE: for every custom exception create a new handleXXXException method..to create a custom message for that exception..

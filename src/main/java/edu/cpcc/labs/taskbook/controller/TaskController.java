@@ -67,7 +67,7 @@ public class TaskController {
 	// URI: /api/taskbook/tasks
 	// URL: http://localhost:8080/api/taskbook/tasks	
 	@PostMapping()
-	public Task create(@RequestBody @Valid Task task) {
+	public Task create(@RequestBody @NotNull @Valid Task task) {
 		return this.taskService.create(task);		
 	}
 	
@@ -75,7 +75,7 @@ public class TaskController {
 	// URI: /api/taskbook/tasks
 	// URL: http://localhost:8080/api/taskbook/tasks	
 	@PutMapping()
-	public ResponseEntity<Task> update(@RequestBody @Valid Task task) {
+	public ResponseEntity<Task> update(@RequestBody @NotNull @Valid Task task) {
 		Task updatedTask =  this.taskService.update(task);		
 		if (updatedTask == null) {
 			String responseText = "Task NOT found with that id: [" + task.getId() + "]";
@@ -85,7 +85,7 @@ public class TaskController {
 	}
 	
 	// URI: /api/taskbook/tasks?status=<value>
-	// URL: http://localhost:8080/api/taskbook/tasks?status=<value>
+	// URL: http://localhost:8080/api/taskbook/<value of the task id>
 	@DeleteMapping("/{id}")
 	public ResponseEntity<Task> delete(@PathVariable @NotNull Integer id) {
 		Task foundTask = this.taskService.delete(id);

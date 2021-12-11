@@ -8,9 +8,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-
-
-import edu.cpcc.labs.taskbook.controller.TaskController;
 import edu.cpcc.labs.taskbook.dao.TaskRepository;
 import edu.cpcc.labs.taskbook.exception.ApiResourceNotFoundException;
 import edu.cpcc.labs.taskbook.model.Task;
@@ -27,6 +24,8 @@ public class TaskService {
 	public TaskService(TaskRepository taskRespository) {
 		this.taskRespository = taskRespository;		
 	}
+	
+	// NOTE: for every endpoint in the TaskController there is one corresponding method in this service..
 	
 	public List<Task> get() {
 		return this.taskRespository.findAll();
