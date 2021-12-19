@@ -1,9 +1,12 @@
 package edu.cpcc.labs.taskbook.controller;
 
+import java.lang.System.Logger;
 import java.util.List;
 import java.util.Optional;
 
-import org.slf4j.Logger;
+import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
+
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -16,12 +19,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-
-import javax.validation.Valid;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 
 import edu.cpcc.labs.taskbook.model.Task;
 import edu.cpcc.labs.taskbook.model.TaskStatus;
